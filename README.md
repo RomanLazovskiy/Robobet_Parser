@@ -18,7 +18,7 @@ https://docs.docker.com/desktop/install/windows-install/
 https://docs.docker.com/desktop/install/linux-install/
 (Все интрукции можно найти в интернете)
 
-### 3) Утановить Docker-compose
+### 3) Установить Docker-compose
 https://docs.docker.com/compose/install/
 (Все интрукции можно найти в интернете)
 
