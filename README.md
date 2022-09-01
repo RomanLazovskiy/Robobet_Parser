@@ -46,7 +46,7 @@ https://docs.docker.com/compose/install/
 sudo docker-compose up -d
 ```
 
-Проверить запуск контейнеров можн командой: 
+Проверить запуск контейнеров можно командой: 
 
 ```bash
 sudo docker ps
