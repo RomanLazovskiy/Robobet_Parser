@@ -55,7 +55,7 @@ sudo docker ps
 ```bash
 sudo docker-compose logs
 ```
-## Структура таблицы
+## Структура таблицы в бд
 
 ```
 id - id матча
