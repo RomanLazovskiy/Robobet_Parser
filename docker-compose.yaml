@@ -1,0 +1,30 @@
+gversion: '3'
+
+services:
+  robobet_parser:
+    build: .
+    restart: always
+    depends_on:
+      - robobet_db
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONIOENCODING=UTF-8
+      - TZ=Asia/Yekaterinburg
+    network_mode: "host" 
+
+  robobet_db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=robobet
+    volumes:
+      - pg_db_volume:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_PORT:-5432}:5432
+    
+volumes:
+  pg_db_volume:
+    driver: local
+      
